@@ -15,3 +15,5 @@ BENEFITS :
 - flexibility
 - Robustness
 - Cost
+
+For each region there are et least 2 multiple availability zones
