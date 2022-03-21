@@ -59,13 +59,11 @@ Content delivery Network
 - Reduce latency by delivering data through 310+ globally dispersed Points of Presence (PoPs) with automated network mapping and intelligent routing.
 
 
-User journey has to be satisfactory
+## INTERVIEW PREP
 
-- 1. Creating github repo to push markdown docu
-- 2.  Amazon Web Services (AWS)
+- Passion
+- Excietment
+- Achievment
 
-
-
-
-
-For each region there are et least 2 multiple availability zones
+### Extra Notes
+- Scrum the framework that is used to implement Agile methodology
