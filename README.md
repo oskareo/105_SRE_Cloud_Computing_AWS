@@ -3,4 +3,4 @@
 ### User Journey
 #### User Experience
 ##### AWS Services
-- Creating github repo to push markdown doc
+- Creating github repo to push markdown docu
