@@ -31,6 +31,13 @@ Amazon Web Services (AWS) is a subsidiary of Amazon providing on-demand cloud co
 
 - AZs give customers the ability to operate production applications and databases that are more highly available, fault tolerant, and scalable than would be possible from a single data center.
 
+## FOUR PILLARS
+
+- Fault Tolerance
+- High Availability
+- Scalability
+- Elasticity
+
 ## More than one availability zone?
 
 - For backup purposes. The minute one availability zone doesnt work/is not 200k we need to stop the traffic and redirect it to the second avalible zone.
