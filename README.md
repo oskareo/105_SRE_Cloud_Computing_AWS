@@ -58,7 +58,6 @@ Content delivery Network
   
 - Reduce latency by delivering data through 310+ globally dispersed Points of Presence (PoPs) with automated network mapping and intelligent routing.
 
-
 ## INTERVIEW PREP
 
 - Passion
@@ -67,3 +66,8 @@ Content delivery Network
 
 ### Extra Notes
 - Scrum the framework that is used to implement Agile methodology
+if the person taking notes stops taking notes, what you might say might not be important anymore
+
+- Where do you see yourself in the future? talk about how are you planning to get there. Break it down in steps
+
+  
