@@ -70,4 +70,6 @@ if the person taking notes stops taking notes, what you might say might not be i
 
 - Where do you see yourself in the future? talk about how are you planning to get there. Break it down in steps
 
+- if you do not know how to respond to a interview question, then start with "My understanding of this is..."
+
   
