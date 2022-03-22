@@ -70,6 +70,18 @@ Content delivery Network
 
 ## ON PREM VS HYBRID - ON PREM VS PUBLIC CLOUD
 
+### On prem VS Hybrid VS Public Cloud
+
+- On prem
+  - storing all the data of the organisation on the premises of the organisation, in other words running an internal server maintained by the organisation itself
+  
+- Public Cloud
+  - a server on the web that stores all of the companies data, which is fully maintained by a different organisation
+  - For example, using AWS, the server space is used by the individual company, but the maintanance is done by Amazon
+- Hybryd
+  - storing some of the information within the internal organisation server, and some on a public server like AWS
+  - For example, a bank might keep your card information within the banks internal server, but keep a credit application form on a public server
+
 ###  hybrid cloud
 
 A hybrid cloud is a type of cloud computing that combines on-premises infrastructure—or a private cloud—with a public cloud. Hybrid clouds allow data and apps to move between the two environments.
@@ -78,11 +90,18 @@ A hybrid cloud is a type of cloud computing that combines on-premises infrastruc
 
 A hybrid cloud platform gives organisations many advantages—such as greater flexibility, more deployment options, security, compliance, and getting more value from their existing infrastructure. When computing and processing demand fluctuates, hybrid cloud computing gives businesses the ability to seamlessly scale up their on-premises infrastructure to the public cloud to handle any overflow—without giving third-party datacentres access to the entirety of their data.
 
-### Diagram
+# AWS -> localhost and back
+- Our desktop or laptop has set hardware and software on it
+- AWS doesn't, so we need to specify the size we want it to have
+- need credentials (username, password, AWS keys) to have access
 
+### Diagram
 
 ![Diagram](https://user-images.githubusercontent.com/34945430/159462791-8d14998a-e95c-41e0-b9bd-c87ecab7d42f.png)
 
+## or
+
+![Diagram](https://user-images.githubusercontent.com/87706066/159463394-5b656e36-fe85-4ebb-9a08-2134562cbcb6.png)
 
 
 ## INTERVIEW PREP
