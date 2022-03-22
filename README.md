@@ -103,6 +103,8 @@ A hybrid cloud platform gives organisations many advantages—such as greater fl
 
 ![Diagram](https://user-images.githubusercontent.com/87706066/159463394-5b656e36-fe85-4ebb-9a08-2134562cbcb6.png)
 
+# Making an AWS Version 1
+
 ## Making an AWS
 
 - pem file contains the security key. When a request is sent from local host, this key is used to see if you are authorised.
@@ -117,10 +119,32 @@ A hybrid cloud platform gives organisations many advantages—such as greater fl
 - connect to instance through ssh client
 - make sure you are on the same working directory as 105.perm
 - copy the ssh key
+  
+# Making an AWS Version 2
 
+### How to connect to remote VM: ###
 
+1. put the SSH key into your .ssh folder (C/users/username/.ssh)
+2. In AWS Select EC2
+3. Create a new instance (in this case ubuntu v 18.04)
+4. add a name
+5. add security groups:
+    - make sure to restrict access in SSH selecting proper port
+    - allow access to vm through HTTP
+6. Launch and connect following the instructions from
+AWS
 
-## INTERVIEW PREP
+7. **Remember to stop the instance when not using the vm through the AWS website** 
+(some steps may need clarification)
+---
+### Inside the VM ##
+
+1. Run: sudo apt-get update -y
+2. run: sudo apt-get upgrade -y
+3. run: sudo apt-get install nginx -y
+4. Check that it was installed sucessfully through checking the public IP
+
+# INTERVIEW PREP
 
 - Passion
 - Excietment
