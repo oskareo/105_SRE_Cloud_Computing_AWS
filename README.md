@@ -13,9 +13,20 @@ A site Reliability Engineer is in charge of making sure that the product(site) i
 cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, flexible resources, and economies of scale.
 
 - Ease of use
-- flexibility
+
+With the cloud, you can expand to new geographic regions and deploy globally in minutes
+  
+- Flexibility 
+
+The cloud gives you easy access to a broad range of technologies so that you can innovate faster and build nearly anything that you can imagine. You can quickly spin up resources as you need them–from infrastructure services, such as compute, storage, and databases, to Internet of Things, machine learning, data lakes and analytics, and much more.
+
 - Robustness
+
+With cloud computing, you don’t have to over-provision resources up front to handle peak levels of business activity in the future. Instead, you provision the amount of resources that you actually need. You can scale these resources up or down to instantly grow and shrink capacity as your business needs change.
+  
 - Cost
+- 
+The cloud allows you to trade capital expenses (such as data centers and physical servers) for variable expenses, and only pay for IT as you consume it. Plus, the variable expenses are much lower than what you would pay to do it yourself because of the economies of scale. 
 
 ## Amazon Web Services(AWS)
 
@@ -57,6 +68,8 @@ Content delivery Network
 - Cut costs with consolidated requests, customizable pricing options, and zero fees for data transfer out from AWS origins
   
 - Reduce latency by delivering data through 310+ globally dispersed Points of Presence (PoPs) with automated network mapping and intelligent routing.
+
+
 
 ## INTERVIEW PREP
 
