@@ -25,7 +25,7 @@ The cloud gives you easy access to a broad range of technologies so that you can
 With cloud computing, you don’t have to over-provision resources up front to handle peak levels of business activity in the future. Instead, you provision the amount of resources that you actually need. You can scale these resources up or down to instantly grow and shrink capacity as your business needs change.
   
 - Cost
-- 
+  
 The cloud allows you to trade capital expenses (such as data centers and physical servers) for variable expenses, and only pay for IT as you consume it. Plus, the variable expenses are much lower than what you would pay to do it yourself because of the economies of scale. 
 
 ## Amazon Web Services(AWS)
@@ -33,7 +33,6 @@ The cloud allows you to trade capital expenses (such as data centers and physica
 Amazon Web Services (AWS) is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis. These cloud computing web services provide a variety of basic abstract technical infrastructure and distributed computing building blocks and tools.
 
 ![AWS](https://s3-us-west-1.amazonaws.com/corpinfowebsiteuploads/content/uploads/2016/04/25051531/AWS-Global-Infrastructure.jpg)
-
 
 
 ## REGION VS AVAILABILITY ZONE
@@ -68,6 +67,21 @@ Content delivery Network
 - Cut costs with consolidated requests, customizable pricing options, and zero fees for data transfer out from AWS origins
   
 - Reduce latency by delivering data through 310+ globally dispersed Points of Presence (PoPs) with automated network mapping and intelligent routing.
+
+## ON PREM VS HYBRID - ON PREM VS PUBLIC CLOUD
+
+###  hybrid cloud
+
+A hybrid cloud is a type of cloud computing that combines on-premises infrastructure—or a private cloud—with a public cloud. Hybrid clouds allow data and apps to move between the two environments.
+
+#### benefits
+
+A hybrid cloud platform gives organisations many advantages—such as greater flexibility, more deployment options, security, compliance, and getting more value from their existing infrastructure. When computing and processing demand fluctuates, hybrid cloud computing gives businesses the ability to seamlessly scale up their on-premises infrastructure to the public cloud to handle any overflow—without giving third-party datacentres access to the entirety of their data.
+
+### Diagram
+
+
+![Diagram](https://user-images.githubusercontent.com/34945430/159462791-8d14998a-e95c-41e0-b9bd-c87ecab7d42f.png)
 
 
 
