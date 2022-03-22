@@ -103,6 +103,22 @@ A hybrid cloud platform gives organisations many advantages—such as greater fl
 
 ![Diagram](https://user-images.githubusercontent.com/87706066/159463394-5b656e36-fe85-4ebb-9a08-2134562cbcb6.png)
 
+## Making an AWS
+
+- pem file contains the security key. When a request is sent from local host, this key is used to see if you are authorised.
+
+### How to launch an instance
+
+- log into the aws website
+- create new e2 instance
+- select ubuntu 18
+- create your security group
+- create one for ssh which will be for you or devs and create one for everyone.
+- connect to instance through ssh client
+- make sure you are on the same working directory as 105.perm
+- copy the ssh key
+
+
 
 ## INTERVIEW PREP
 
