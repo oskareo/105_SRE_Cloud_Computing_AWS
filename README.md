@@ -227,14 +227,135 @@ sudo ufw allow from any port 8080 proto tcp
 http://3.250.77.102:8080/
 
 ```
-
 ![](https://user-images.githubusercontent.com/53493950/159737926-41a4e512-2fa8-4beb-b263-2916c5db48d3.PNG)
 
 
 - change the file to exe `chmod +x provision.sh`
 - how to run an exe file `./provision.sh`
 
+### what is a VPC?
+- A VPC is a public cloud offering that lets an enterprise establish its own private cloud-like computing environment on shared public cloud infrastructure. 
+- A VPC gives an enterprise the ability to define and control a virtual network that is logically isolated from all other public cloud tenants, creating a private, secure place on the public cloud.
+  
+https://www.ibm.com/cloud/learn/vpc
 
+
+<br/>
+
+
+![Diagram](https://user-images.githubusercontent.com/53493950/159765272-98e7832a-abd5-4dbf-870f-1d817b2abdf9.png)
+
+<br />
+<br />
+
+
+### what is Internet gateway?
+
+- An Internet gateway is a network "node" that connects two different networks that use different protocols (rules) for communicating.
+- In the most basic terms, an Internet gateway is where data stops on its way to or from other networks. Thanks to gateways, we can communicate and send data back and forth with each other.
+  
+https://www.whatismypublicip.com/blog/what-is-an-internet-gateway/
+
+<br />
+
+### What is a subnet?
+
+- A subnet, or subnetwork, is a network inside a network. Subnets make networks more efficient. 
+- Through subnetting, network traffic can travel a shorter distance without passing through unnecessary routers to reach its destination.
+  
+<br />
+
+![SUBNET](https://user-images.githubusercontent.com/53493950/159752842-5a40d813-8c9a-4daa-9189-02d8cfb27503.PNG)
+
+
+
+<br />
+
+### What is Nacls?
+
+- NACL refers to Network Access Control List, which helps provide a layer of security to the Amazon Web Services stack.  
+
+- NACL helps in providing a firewall thereby helping secure the VPCs and subnets. 
+
+- It helps provide a security layer which controls and efficiently manages the traffic that moves around in the subnets.
+
+- It is an optional layer for VPC, which adds another security layer to the Amazon service. 
+
+- VPC refers to Virtual private Cloud, which can be visualized as a container that stores subnets. 
+
+- Subnets can be considered as a container, which helps store data.  
+
+
+#### links Nacls
+
+<br />
+
+![SG](https://user-images.githubusercontent.com/53493950/159757655-25395353-aaed-4d3b-8552-5a390d65a665.PNG)
+
+<br />
+
+<br />
+
+https://www.knowledgehut.com/tutorials/aws/aws-nacl
+
+https://www.awsboy.com/aws-security-groups-vs-nacls/
+
+<br />
+
+<br />
+
+
+
+<br />
+
+### What is Security group?
+
+- A security group acts as a virtual firewall, controlling the traffic that is allowed to reach and leave the resources that it is associated with. 
+- For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance.
+- Control traffic to resources using security groups
+  
+<br />
+
+![SG](https://user-images.githubusercontent.com/53493950/159757655-25395353-aaed-4d3b-8552-5a390d65a665.PNG)
+
+<br />
+
+## how did you secure your app on the public cloud?
+
+### Cover your basics first
+- Authorization
+- Auditing and logging
+- Confidentiality 
+- Integrity
+### Three security approaches you need for public cloud
+1.  Focus on the data
+- - The platform level
+- - The database level
+- - The application level
+2.   It’s all about identity
+
+- Use identity and access management (IAM) technology to initiate, capture, record, and manage user identities and related access permissions. 
+- IAM ensures that access privileges are granted according to policy set by both the developers and security administrators.
+3.  Move from DevOps to DevSecOps
+   - You need to focus more on DevSecOps, or development security operations, where you deal with testing security within the DevOps processes. 
+   - DevSecOps => You must constantly check applications for the proper use of IAM services, encryption, and other security processes that should be built into the application and make sure they're all functioning correctly.
+   - Public cloud best practice: Oversecure your apps
+   
+<br />
+
+### What are the outbound rules for security groups by default? and why?
+- The default is to allow all outbound traffic to leave 
+- Server doesn't limit who is requesting the resource and what port they are on
+### What is the command to kill a process in linux?
+- Using Process Name: `killall proccess`
+- Using Process ID: `kill processID`
+- Unresponsive Process: `kill -9 processID`
+
+<br />
+
+![vpc analogy](https://user-images.githubusercontent.com/53493950/159765434-add64d0b-e4b5-4eac-a583-819a59a6d62f.png)
+
+<br />
 
 # INTERVIEW PREP
 
