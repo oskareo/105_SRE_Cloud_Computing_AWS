@@ -219,12 +219,12 @@ sudo systemctl enable tomcat9
 
 #specify port
 sudo ufw allow from any port 8080 proto tcp
-http://3.250.77.102:8080/
-
 
 #add new rule
 
 #edit inbound rules
+
+http://3.250.77.102:8080/
 
 ```
 
