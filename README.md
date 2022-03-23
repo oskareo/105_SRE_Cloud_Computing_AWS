@@ -146,7 +146,8 @@ AWS
 
 
 ## Linux Command
-- How to start a service `sudo systemctl start name_service`
+-  after executing sudo systemctl  `ctrl+c`
+- How to start a service `sudo systemctl status name_service`
 - retarting a service: `sudo(admin user) systemctl start name_service`
 - stoping a service: `systemctl status stop name_service`
 - enable service  `sudo systemctl enable name_service`
@@ -160,10 +161,7 @@ AWS
 - how to check content of the file without going inside the file `cat file_name`
 - How to move a file to another location `mv file_name directory_name`
 - how to delete a folder(by force) `sudo rm -rf forder_name`
-- code block
-```bash
 
-```
 
 ### File Permission
 
@@ -172,6 +170,34 @@ AWS
 - `sudo chmod +x provision.sh`
 - write `w` read `r` exe `x`
 - https://chmod-calculator.com/
+
+
+### Bash scripting - Automate process with the script
+
+- code block
+```bash
+# it must be in #!/bin/bash
+
+#run updates
+sudo apt-get update -y
+
+#upgrade
+sudo apt-get upgrade -y
+#install 
+sudo apt-get install nginx -y
+
+#start nginx
+sudo systemctl start nginx
+
+
+#enable service
+sudo systemctl enable nginx
+```
+
+
+- change the file to exe `chmod +x provision.sh`
+- how to run an exe file `./provision.sh`
+
 
 
 # INTERVIEW PREP
