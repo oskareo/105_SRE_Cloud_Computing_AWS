@@ -159,10 +159,19 @@ AWS
 - how to create a file `touch name_file` (only creates) or `nano file_name` (creates a file and adds something to it)
 - how to check content of the file without going inside the file `cat file_name`
 - How to move a file to another location `mv file_name directory_name`
+- how to delete a folder(by force) `sudo rm -rf forder_name`
 - code block
 ```bash
 
 ```
+
+### File Permission
+
+-how to check a file permission `ll`(double l)
+-change file permision `chmod required_permision file_name`
+- `sudo chmod +x provision.sh`
+- write `w` read `r` exe `x`
+
 
 # INTERVIEW PREP
 
