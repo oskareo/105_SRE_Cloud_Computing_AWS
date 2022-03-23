@@ -147,8 +147,17 @@ AWS
 
 ## Linux Command
 - How to start a service `sudo systemctl start name_service`
-- retarting: `sudo(admin user) systemctl start nginx`
-- stop: `systemctl status stop nginx`
+- retarting a service: `sudo(admin user) systemctl start name_service`
+- stoping a service: `systemctl status stop name_service`
+- enable service  `sudo systemctl enable name_service`
+- how to install a package `sudo apt-get install package_name -y`
+- how to remove a package `sudo apt-get remove package_name -y`
+- how to check all process `top`
+- who am I `pwd`
+- create dir `mkdir dir_name`
+- how to check `ls` or `ls-a`
+- how to create a file `touch name_file` (only creates) or `nano file_name` (creates a file and adds something to it)
+- how to check content of the file without going inside the file `cat file_name`
 - code block
 ```bash
 
