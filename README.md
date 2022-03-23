@@ -171,6 +171,7 @@ AWS
 -change file permision `chmod required_permision file_name`
 - `sudo chmod +x provision.sh`
 - write `w` read `r` exe `x`
+- https://chmod-calculator.com/
 
 
 # INTERVIEW PREP
