@@ -211,6 +211,9 @@ sudo apt-get upgrade -y
 #install 
 sudo apt-get install tomcat9 tomcat9-admin
 
+#start service
+sudo systemctl start tomcat9
+
 #enable service
 sudo systemctl enable tomcat9
 
