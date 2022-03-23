@@ -147,6 +147,8 @@ AWS
 
 ## Linux Command
 - How to start a service `sudo systemctl start name_service`
+- retarting: `sudo(admin user) systemctl start nginx`
+- stop: `systemctl status stop nginx`
 - code block
 ```bash
 
