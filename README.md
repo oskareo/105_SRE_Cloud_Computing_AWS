@@ -359,35 +359,58 @@ https://www.awsboy.com/aws-security-groups-vs-nacls/
 
 ### Monolith -N-tier - 2-tier & Microservices
 
+- Not use Monolith on bussiness that you have to scale up. Instead adopt cloud and microservices
+
+- Microservice architecture
+- more expensive
+- harder to manage
+
+when to use?
+
+- When scaling up
+
+when not to use?
+
+- if the product is small do not use microdervices
+
+#### scale up?
+
+increase the size of the server if size of server increases
+
+#### scale out?
+
+if traffic increases(user) scale out and in. Add more servers to handle traffic
+
+https://opsani.com/blog/scale-up-vs-scale-out-whats-the-difference/
+
+
 -------------------------
-# So what does DevOps actually mean?
+# So what does DevOps actually mean? (Aricle)
 
 - In a nutshell — DevOps is a culture that bridges the gap 
 between development and IT operation teams
 
-Pipeline? using Docker? and Jenkins?.
 
-Docker?
+## Docker?
 
-virtualization platform to containerise your app
+- virtualization platform to containerise your app
 
-WHO USES? Top companies like ING, Paypal, ADP, and Spotify 
+- WHO USES? Top companies like ING, Paypal, ADP, and Spotify 
 
-Continuous Integration Efficiency with Docker enables you to build a container image
+- Continuous Integration Efficiency with Docker enables you to build a container image
 
-BENEFITS?
+- BENEFITS?
 
-separate non-dependent steps and run them in parallel
+- separate non-dependent steps and run them in parallel
 
-CI — Continuous Integration and CD — Continuous Delivery and Deployment
+## CI — Continuous Integration and CD — Continuous Delivery and Deployment
 
-CI CD is considered as the backbone of DevOps practices and automation
+- CI CD is considered as the backbone of DevOps practices and automation
 
-releasing software in minutes
+- releasing software in minutes
 
-Advantages?
+- Advantages? fault isolation is simpler and easier
 
-fault isolation is simpler and easier
 
 # INTERVIEW PREP
 
