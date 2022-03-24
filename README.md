@@ -357,6 +357,38 @@ https://www.awsboy.com/aws-security-groups-vs-nacls/
 
 <br />
 
+### Monolith -N-tier - 2-tier & Microservices
+
+-------------------------
+# So what does DevOps actually mean?
+
+- In a nutshell — DevOps is a culture that bridges the gap 
+between development and IT operation teams
+
+Pipeline? using Docker? and Jenkins?.
+
+Docker?
+
+virtualization platform to containerise your app
+
+WHO USES? Top companies like ING, Paypal, ADP, and Spotify 
+
+Continuous Integration Efficiency with Docker enables you to build a container image
+
+BENEFITS?
+
+separate non-dependent steps and run them in parallel
+
+CI — Continuous Integration and CD — Continuous Delivery and Deployment
+
+CI CD is considered as the backbone of DevOps practices and automation
+
+releasing software in minutes
+
+Advantages?
+
+fault isolation is simpler and easier
+
 # INTERVIEW PREP
 
 - Passion
