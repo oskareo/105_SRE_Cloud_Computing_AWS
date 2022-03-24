@@ -359,29 +359,29 @@ https://www.awsboy.com/aws-security-groups-vs-nacls/
 
 # Monolith -N-tier - 2-tier & Microservices
 
-- Not use Monolith on bussiness that you have to scale up. Instead adopt cloud and microservices
+- Do not use Monolith on bussiness that you have to scale up. Instead adopt cloud and microservices
 
-- Microservice architecture are more expensive and harder to manage
+- Microservices architectures are more expensive and harder to manage and mantain
 
-### when to use microservices?
+### When to use microservices?
 
 - When scaling up
 
-### when not to use microservices?
+### When not to use microservices?
 
 - if the product is small do not use microdervices
   
-#### scale up?
+#### Scale up?
 
 Increase the size of the server if size of all data in the server increases
 
-#### scale out?
+#### Scale out?
 
-if traffic increases(users) scale out or in. Add more servers to handle traffic.
+If the traffic increases (users) scale out or in. Meaning adding more servers to handle traffic.
 
+<br />
 
 https://opsani.com/blog/scale-up-vs-scale-out-whats-the-difference/
-
 
 
 ### Monolith
@@ -423,15 +423,15 @@ https://opsani.com/blog/scale-up-vs-scale-out-whats-the-difference/
 -------------------------
 # So what does DevOps actually mean? (Aricle)
 
-- In a nutshell — DevOps is a culture that bridges the gap 
-between development and IT operation teams
+- In a nutshell — DevOps/SRE is a culture that bridges the gap 
+between development and IT operation teams.
 
 ## Docker?
 - virtualization platform to containerise your app
 
 - WHO USES it? Top companies like ING, Paypal, ADP, and Spotify 
 
-- Continuous Integration Efficiency with Docker enables you to build a container image
+- CICD with Docker enables you to build a container image
 
 - BENEFITS? Separate non-dependent steps and run them in parallel
 
@@ -453,9 +453,9 @@ between development and IT operation teams
 
 <br />
  
-- releasing software in minutes
+- Releasing software in minutes
 
-- Advantages? fault isolation is simpler and easier
+- Advantages? Fault isolation is simpler and easier
   
 <br />
 
