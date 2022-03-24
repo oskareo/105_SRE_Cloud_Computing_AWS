@@ -372,6 +372,8 @@ when to use?
 when not to use?
 
 - if the product is small do not use microdervices
+  
+![NTIER](https://user-images.githubusercontent.com/53493950/159956369-b3a6e9f9-c698-4029-ab13-8e5b4bfd2808.png)
 
 #### scale up?
 
@@ -390,30 +392,46 @@ https://opsani.com/blog/scale-up-vs-scale-out-whats-the-difference/
 - In a nutshell — DevOps is a culture that bridges the gap 
 between development and IT operation teams
 
-
 ## Docker?
-
 - virtualization platform to containerise your app
 
-- WHO USES? Top companies like ING, Paypal, ADP, and Spotify 
+- WHO USES it? Top companies like ING, Paypal, ADP, and Spotify 
 
 - Continuous Integration Efficiency with Docker enables you to build a container image
 
-- BENEFITS?
-
-- separate non-dependent steps and run them in parallel
+- BENEFITS? Separate non-dependent steps and run them in parallel
 
 ## CI — Continuous Integration and CD — Continuous Delivery and Deployment
-
-- CI CD is considered as the backbone of DevOps practices and automation
-
-![cd](https://user-images.githubusercontent.com/53493950/159931558-f1571a80-c309-4b5f-a389-2dc0dac35f72.png)
+ 
+- CI: Developers merge/commit code to master branch multiple times a day, fully automated build and test process.
+  
+<br />
 
 ![ci](https://user-images.githubusercontent.com/53493950/159931054-dd289e2c-9c2b-484b-9c61-b02b51e63429.png)
 
+<br />
+  
+ - CD is an extension of continuous integration to make sure that you can release new changes to your customers quickly/sustainable way
+
+<br />
+
+![cd](https://user-images.githubusercontent.com/53493950/159931558-f1571a80-c309-4b5f-a389-2dc0dac35f72.png)
+
+<br />
+ 
 - releasing software in minutes
 
 - Advantages? fault isolation is simpler and easier
+  
+<br />
+  
+
+
+
+
+
+
+
 
 # INTERVIEW PREP
 
