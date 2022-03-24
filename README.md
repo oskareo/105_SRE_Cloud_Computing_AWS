@@ -361,29 +361,63 @@ https://www.awsboy.com/aws-security-groups-vs-nacls/
 
 - Not use Monolith on bussiness that you have to scale up. Instead adopt cloud and microservices
 
-- Microservice architecture
-- more expensive
-- harder to manage
+- Microservice architecture are more expensive and harder to manage
 
-when to use?
+### when to use microservices?
 
 - When scaling up
 
-when not to use?
+### when not to use microservices?
 
 - if the product is small do not use microdervices
   
-![NTIER](https://user-images.githubusercontent.com/53493950/159956369-b3a6e9f9-c698-4029-ab13-8e5b4bfd2808.png)
-
 #### scale up?
 
-increase the size of the server if size of server increases
+Increase the size of the server if size of all data in the server increases
 
 #### scale out?
 
-if traffic increases(user) scale out and in. Add more servers to handle traffic
+if traffic increases(users) scale out or in. Add more servers to handle traffic.
+
 
 https://opsani.com/blog/scale-up-vs-scale-out-whats-the-difference/
+
+
+
+### Monolith
+
+<br />
+
+![monpvsmicro](https://user-images.githubusercontent.com/53493950/159965492-87dd5471-e6c3-454f-924f-95c464e3a40f.png)
+
+
+<br />
+
+### -N-tier
+
+<br />
+
+![ntier](https://user-images.githubusercontent.com/53493950/159956369-b3a6e9f9-c698-4029-ab13-8e5b4bfd2808.png)
+
+<br />
+
+
+### 2-tier
+
+<br />
+
+![2tier](https://user-images.githubusercontent.com/53493950/159965976-8862f6a9-d5d3-4528-b1f4-04fd8211dcba.jpg)
+
+<br />
+
+### Microservices
+
+<br />
+
+![2tier](https://user-images.githubusercontent.com/53493950/159967560-943cda84-a0eb-42b0-a58c-d6ab1e741e29.PNG)
+
+<br />
+
 
 
 -------------------------
@@ -424,13 +458,13 @@ between development and IT operation teams
 - Advantages? fault isolation is simpler and easier
   
 <br />
+
+#### CICD diagram
+
+![cicd](https://user-images.githubusercontent.com/53493950/159957668-63322bbb-9af0-46b8-96c5-b2b673d2cf0a.png)
+
+<br />
   
-
-
-
-
-
-
 
 
 # INTERVIEW PREP
