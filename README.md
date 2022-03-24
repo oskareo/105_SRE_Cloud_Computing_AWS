@@ -357,7 +357,7 @@ https://www.awsboy.com/aws-security-groups-vs-nacls/
 
 <br />
 
-### Monolith -N-tier - 2-tier & Microservices
+# Monolith -N-tier - 2-tier & Microservices
 
 - Not use Monolith on bussiness that you have to scale up. Instead adopt cloud and microservices
 
@@ -407,10 +407,13 @@ between development and IT operation teams
 
 - CI CD is considered as the backbone of DevOps practices and automation
 
+![cd](https://user-images.githubusercontent.com/53493950/159931558-f1571a80-c309-4b5f-a389-2dc0dac35f72.png)
+
+![ci](https://user-images.githubusercontent.com/53493950/159931054-dd289e2c-9c2b-484b-9c61-b02b51e63429.png)
+
 - releasing software in minutes
 
 - Advantages? fault isolation is simpler and easier
-
 
 # INTERVIEW PREP
 
@@ -419,8 +422,10 @@ between development and IT operation teams
 - Achievment
 
 ### Extra Notes
+
 - Scrum the framework that is used to implement Agile methodology
-if the person taking notes stops taking notes, what you might say might not be important anymore
+  
+- if the person taking notes stops taking notes, what you might say might not be important anymore
 
 - Where do you see yourself in the future? talk about how are you planning to get there. Break it down in steps
 
