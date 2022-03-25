@@ -372,12 +372,14 @@ https://www.awsboy.com/aws-security-groups-vs-nacls/
 - if the product is small do not use microdervices
   
 #### Scale up?
-
-Increase the size of the server if size of all data in the server increases
+- moving upwards
+- increase the volume in the specs when the size of the instance is too big for the current one.
+- Increase the size of the server if size of all data in the server increases
 
 #### Scale out?
-
-If the traffic increases (users) scale out or in. Meaning adding more servers to handle traffic.
+- moving sideways
+- scaling sideways when the number of users increases
+- If the traffic increases (users) scale out or in. Meaning adding more servers to handle traffic.
 
 <br />
 
@@ -385,6 +387,17 @@ https://opsani.com/blog/scale-up-vs-scale-out-whats-the-difference/
 
 
 ### Monolith
+
+- a monolithic is built on a single unit.
+ - there are three major parts
+ - a client UI
+ - a server-side application
+ - a database
+ - simple but has limitations
+ - heavy apps can slow down the start up time
+ - need to redeploy everytime there is a update
+ - challenging to upscale
+ - useful for simple and lightweight apps
 
 <br />
 
@@ -395,6 +408,9 @@ https://opsani.com/blog/scale-up-vs-scale-out-whats-the-difference/
 
 ### -N-tier
 
+- The program is distributed amongst 3 or more computers in a distributed network.
+- UI, business logic and databases are seperate
+
 <br />
 
 ![ntier](https://user-images.githubusercontent.com/53493950/159956369-b3a6e9f9-c698-4029-ab13-8e5b4bfd2808.png)
@@ -404,6 +420,9 @@ https://opsani.com/blog/scale-up-vs-scale-out-whats-the-difference/
 
 ### 2-tier
 
+- there is no business logic layer between the client and the server
+- the UI layer runs on the client side while dataset layer gets executed and stored on server side.
+
 <br />
 
 ![2tier](https://user-images.githubusercontent.com/53493950/159965976-8862f6a9-d5d3-4528-b1f4-04fd8211dcba.jpg)
@@ -412,11 +431,38 @@ https://opsani.com/blog/scale-up-vs-scale-out-whats-the-difference/
 
 ### Microservices
 
+- everything is a service on a micro level
+- allows business to scale up and add new features
+- new services does not effect the old services
+- each service/feature can be test independently
+- the database is not on the front end
+- expensive
+
 <br />
 
 ![2tier](https://user-images.githubusercontent.com/53493950/159967560-943cda84-a0eb-42b0-a58c-d6ab1e741e29.PNG)
 
 <br />
+
+
+
+
+### SDLC
+- stands for software development lifecycle
+- the process of end to end product development
+
+###### The stages are:
+- Planning: Just an idea, only in someones head
+- Designing: Writing out how the product will look and what it needs.
+- Development: Develop an environment that works for all of us. i.e the linux instance we created implementing the design.
+- Testing: Nothing goes to production without testing, The test must pass in order to go to the next stage, Beta versions can happen after testing to get feedback from the user.
+- Staging: Its the holding area before the code gets deployed. The program is packaged and ready, just on hold till the release date. After staging the code is deployed.
+  
+### Github
+-	One person reviewing is always the best.
+-	Someone who is more knowledgeable should merge.
+-	Git enter will tell you all the commands that can be performed on git
+-	If you delete the .git file you need to reconnect to the github remote before pushing the code back to github.
 
 
 
