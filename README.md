@@ -160,7 +160,29 @@ AWS
 - how to create a file `touch name_file` (only creates) or `nano file_name` (creates a file and adds something to it)
 - how to check content of the file without going inside the file `cat file_name`
 - How to move a file to another location `mv file_name directory_name`
-- how to delete a folder(by force) `sudo rm -rf forder_name`
+- how to delete a folder(by force) `sudo rm -rf forder_name
+- `
+  25/03/22
+- alias python=python3
+-  python3 -m pip install awscli
+-  aws configure
+-  aws s3 ls
+-  aws s3 mb s3://105-sre-oscar "//make directory i
+-  aws s3 cp test.txt s3://105-sre-oscar  "copy file to bucket s
+-  aws s3 sync s3://105-sre-oscar . "download file from whole s3 bucket
+-  aws s3 cp s3://105-sre-oscar .  "download file from s3
+
+sudo aws s3 rm s3://105-sre-oscar delete file first
+sudo aws rb s3://105-sre-oscar  "delete bucket
+
+ sudo aws s3 rm s3://105-sre-oscar/test.txt  "remove file
+
+ sudo aws s3 rb s3://105-sre-oscar  "remove bucket
+
+
+
+
+
 
 
 ### File Permission
@@ -372,11 +394,13 @@ https://www.awsboy.com/aws-security-groups-vs-nacls/
 - if the product is small do not use microdervices
   
 #### Scale up?
+
 - moving upwards
 - increase the volume in the specs when the size of the instance is too big for the current one.
 - Increase the size of the server if size of all data in the server increases
 
 #### Scale out?
+
 - moving sideways
 - scaling sideways when the number of users increases
 - If the traffic increases (users) scale out or in. Meaning adding more servers to handle traffic.
@@ -510,8 +534,27 @@ between development and IT operation teams.
 ![cicd](https://user-images.githubusercontent.com/53493950/159957668-63322bbb-9af0-46b8-96c5-b2b673d2cf0a.png)
 
 <br />
-  
 
+  
+# S3
+SIMPLE STORAGE SERVICE
+
+- USED FOR  dISASTER RECOVERY PLAN TO BACK UP YOU DATA
+- -COST EFFECTIVE
+- uNLIKE OTHERS WE USE SQL
+- PRICE INCREASES DEPENDING ON USE CASE(HOW DO YOU WANT TO USE THE SERVICE, SPEED)
+
+# DOCKER AND CONTAINARISATION
+  
+### benefits
+
+- globally available which makes it highly available
+
+- ec2 instance
+- install dependencies for s3
+- AWSCLI - Phython 3 and above - running ec2
+- AWS ACCESS &  secret keys
+- 
 
 # INTERVIEW PREP
 
