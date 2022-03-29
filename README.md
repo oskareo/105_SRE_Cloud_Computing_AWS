@@ -554,6 +554,21 @@ SIMPLE STORAGE SERVICE
 - It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment
 -Kind of like a virtualized Pen Drive(USB)
 
+<br/>
+
+
+## Container architecture
+
+- A container is an isolated, lightweight silo for running an application on the host operating system. 
+- Containers build on top of the host operating system's kernel sharing its resources
+
+![cotainer](https://user-images.githubusercontent.com/53493950/160572366-9bb28ec9-6bf1-4e30-876a-3155e6267555.PNG)
+
+## Virtual machine architecture
+
+- In contrast to containers, VMs run a complete operating system–including its own kernel.
+
+![vm](https://user-images.githubusercontent.com/53493950/160572562-755f3f28-9baf-43a9-9c0a-88e47aa13b3f.PNG)
 
 <br/>
 
