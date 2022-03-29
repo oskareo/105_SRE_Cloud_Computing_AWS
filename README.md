@@ -697,6 +697,23 @@ localhost:<number of port>/swagger/index.html
 <br/>
 <br/>
 
+
+#### Do this to put swagger as base
+
+<br/>
+
+```
+c.RoutePrefix = string.Empty;
+```
+
+
+
+
+![swagger](https://user-images.githubusercontent.com/53493950/160706288-02b02d19-3f7b-4023-8fba-678c5e2a3124.PNG)
+
+<br/>
+<br/>
+
 # API DOCUMENTATION
   
 ### benefits
