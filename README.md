@@ -545,6 +545,46 @@ SIMPLE STORAGE SERVICE
 - PRICE INCREASES DEPENDING ON USE CASE(HOW DO YOU WANT TO USE THE SERVICE, SPEED)
 
 # DOCKER AND CONTAINARISATION
+
+![docker](https://user-images.githubusercontent.com/53493950/160422712-f4a41bbe-2d7c-4272-a2cf-67d3501714bb.png)
+
+<br/>
+
+- Docker is an open source containerization platform.
+- It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment
+-Kind of like a virtualized Pen Drive(USB)
+
+
+<br/>
+
+### Docker commands
+- download an image
+```bash
+ docker run -d -p 100:80 oscareo/sre_105:latest
+```
+- list all the images
+```bash
+ docker images
+```
+- list all the running containers
+```bash
+ docker ps
+```
+- move files into a docker container using container id
+```bash
+ docker cp index.html b1c78ac9657f:/usr/share/nginx/html/index.html
+```
+- create a docker image from container
+```bash
+ docker commit b1c78ac9657f oscareo/sre_105
+```
+- push the image to the docker hub
+```bash
+ docker push oscareo/sre_105:latest
+```
+
+
+# API DOCUMENTATION
   
 ### benefits
 
