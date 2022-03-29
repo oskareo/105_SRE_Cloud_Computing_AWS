@@ -550,12 +550,11 @@ SIMPLE STORAGE SERVICE
 
 <br/>
 
-- Docker is an open source containerization platform.
+- Docker is a containerization platform.
 - It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment
--Kind of like a virtualized Pen Drive(USB)
+
 
 <br/>
-
 
 ## Container architecture
 
@@ -598,6 +597,105 @@ SIMPLE STORAGE SERVICE
  docker push oscareo/sre_105:latest
 ```
 
+## Automation Docker
+
+- Crio -Rocket - Docker (Container)
+- Automate image building of our customised nginix image
+
+
+### Docker file to automate the process of building customised image - building a microservice with docker
+
+- Create a Dockerfile in the same location as your project(Dockerfile has no extension)
+
+![dockerfile](https://user-images.githubusercontent.com/53493950/160706220-20ab7867-8c04-4f07-8682-0bd2ed65797d.PNG)
+
+- inside it decide which base image you are going to use. for example:
+```bash
+FROM nginx
+```
+- As an optional step you can set the author of the image. For example:
+```bash
+LABEL MAINTAINER=OSCAR
+```
+- copy the data from localhost to your container. For example:
+```bash
+COPY index.html /usr/share/nginx/html
+```
+- Set what is the required port for your project
+```bash
+EXPOSE 80
+``` 
+- launch the app using CMD. For ecample:
+```bash
+CMD ["nginx", "-g", "daemon off;"]
+# -g allows the image to be accessed globally
+``` 
+- Finally build the image from the dockerfile. For example:
+```bash
+docker build -t oscareo/105_sre_oscar_nginx_test .
+#the . tells you the location you want the test to run from
+```
+- once it runs fine you can push it to docker hub. Example:
+```bash
+docker push oscareo/105_sre_oscar_nginx_test:latest
+```
+
+### Making the Products Api on docker
+- create a dockerfile in the same location as the api project
+- Make swagger run outside development mode, by commenting out the if statement
+
+![swagger](https://user-images.githubusercontent.com/53493950/160706288-02b02d19-3f7b-4023-8fba-678c5e2a3124.PNG)
+
+- get the dotnet base image and creating a working directory.
+```bash
+COPY *.csproj ./
+RUN dotnet restore
+```
+- The overall dockerFile:
+```bash
+# Get the base image for api
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
+WORKDIR /app
+
+# Copy csproj and restore as distinct layers
+COPY *.csproj ./
+RUN dotnet restore
+
+# Copy everything else and build
+COPY . ./
+RUN dotnet publish -c Release -o out
+
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
+WORKDIR /app
+EXPOSE 80
+EXPOSE 81
+EXPOSE 82
+COPY --from=build-env /app/out .
+ENTRYPOINT ["dotnet", "Employee(Controllers).dll"]
+
+```
+### On the host
+```
+docker build -t <dockerhubuser/repositoryname> .
+docker run -d -p <portrumber>:80 <dockerhubuser/repositoryname>
+docker commit <imageid> <dockerhubuser/repositoryname>
+docker push <dockerhubuser/repositoryname>
+
+```
+
+<br/>
+<br/>
+
+localhost:<number of port>/swagger/index.html
+
+<br/>
+<br/>
+
+![employeeapi](https://user-images.githubusercontent.com/53493950/160707086-cfd2b68f-3cb0-4216-a05b-15098a8ed357.PNG)
+
+<br/>
+<br/>
 
 # API DOCUMENTATION
   
@@ -609,8 +707,7 @@ SIMPLE STORAGE SERVICE
 - install dependencies for s3
 - AWSCLI - Phython 3 and above - running ec2
 - AWS ACCESS &  secret keys
-- 
-
+  
 # INTERVIEW PREP
 
 - Passion
