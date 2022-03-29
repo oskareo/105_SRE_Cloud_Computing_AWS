@@ -714,6 +714,13 @@ c.RoutePrefix = string.Empty;
 <br/>
 <br/>
 
+# Dockerize an ASP.NET Core application
+
+https://docs.docker.com/samples/dotnetcore/
+
+<br/>
+<br/>
+
 # API DOCUMENTATION
   
 ### benefits
