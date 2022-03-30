@@ -721,6 +721,25 @@ https://docs.docker.com/samples/dotnetcore/
 <br/>
 <br/>
 
+# KUBERNETES
+
+https://kubernetes.io/docs/tutorials/kubernetes-basics/
+
+## What can Kubernetes do you? Adventages 
+- Self healing
+- Load balancing and Service Discvery
+- Automated rollouts and rollback
+- Auto Scaling
+- Automatic bin packing
+- Storage Orchestration
+
+## Deployment cycle
+
+
+
+<br/>
+<br/>
+
 # API DOCUMENTATION
   
 ### benefits
