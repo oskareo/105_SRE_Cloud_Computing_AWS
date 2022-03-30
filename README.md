@@ -744,7 +744,12 @@ https://kubernetes.io/docs/tutorials/kubernetes-basics/
 <br/>
 
 
-## K8 COMMANDS
+## K8 COMMANDS and SERVICES
+```
+services: deployment, service, pods, replicasets, crobjob, autoscalinggroup, horizontal pod scaling group (HPA)
+
+```
+
 ```
 Kubectl get service_name - deployment - pod - rs
 
