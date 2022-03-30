@@ -687,6 +687,8 @@ docker push <dockerhubuser/repositoryname>
 <br/>
 <br/>
 
+- Complete url path
+
 localhost:<number of port>/swagger/index.html
 
 <br/>
