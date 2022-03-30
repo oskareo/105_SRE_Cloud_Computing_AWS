@@ -765,6 +765,33 @@ kubectl decribe pod pod_name
 kubectl describe svc
 
 ```
+# what is YAML
+## How to create a yml file.yml or file.yaml
+### How to declare it `---`
+- YML is case sensitive - indantation(2 spaces) of YML IS important
+- use spaces not a tab
+- apiVersion:apps/v1  //which api to use for deployment
+- kind: Deployment  // what kind of service/object you want to create
+- metadata: 
+- name
+---
+#### What are the use cases
+- can be untilised with K8, docker-compose, Ansible, Cloud-formation,
+- To codify anything and everything in order to automated processes
+```
+create a deployment for nginx with 3 pods/containers
+
+```
+
+- Service scripts and deployment scripts separated
+
+```
+create a folder
+create a service - cluster-ip, NodePort - Loadbalancer(scalable)
+create a file for nginx_deployment.yml
+create a file for nginx_svc.yml
+```
+
 <br/>
 
 ![k8commands1](https://user-images.githubusercontent.com/53493950/160810344-087491f2-fac1-4198-bd6d-1b67e271d541.PNG)
