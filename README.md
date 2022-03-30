@@ -737,6 +737,38 @@ https://kubernetes.io/docs/tutorials/kubernetes-basics/
 
 ## Deployment cycle
 
+<br/>
+
+![k8](https://user-images.githubusercontent.com/53493950/160811196-8fe7d1c6-df57-4b5f-a800-5c3b06512190.PNG)
+
+<br/>
+
+
+## K8 COMMANDS
+```
+Kubectl get service_name - deployment - pod - rs
+
+Kubectl get svc
+
+kubectl get deploy/deployment nginx_deploy (nginx_svc)
+
+kubectl get pods
+
+kubectl decribe pod pod_name
+
+kubectl describe svc
+
+```
+<br/>
+
+![k8commands1](https://user-images.githubusercontent.com/53493950/160810344-087491f2-fac1-4198-bd6d-1b67e271d541.PNG)
+
+<br/>
+
+![k8commands2](https://user-images.githubusercontent.com/53493950/160810448-f028912a-94d6-4d8e-ba48-046da580e3be.PNG)
+
+## K8 SCRIPT
+
 
 
 <br/>
