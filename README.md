@@ -770,10 +770,51 @@ kubectl describe svc
 ### How to declare it `---`
 - YML is case sensitive - indantation(2 spaces) of YML IS important
 - use spaces not a tab
-- apiVersion:apps/v1  //which api to use for deployment
-- kind: Deployment  // what kind of service/object you want to create
-- metadata: 
-- name
+
+```yml
+# K8 works with API versions to declare the resources
+# We have to declase to apiVersion and the kind of service/component
+# services: deployment, service, pods, replicasets, crobjob, autoscalinggroup, horizontal pod scaling group (HPA)
+# kubectl get service_name - deployment - pod - rs
+# kubectl get deploy nginx_deploy (nginx_svc)
+# kubectl get pods
+# kubectl describe pod pod_name
+
+# YML is case sensitive - indentation of YML is important
+# use spaces not a tab
+
+apiVersion: apps/v1 # which api to use for deployment
+kind: Deployment # what kind of service/object you want to create
+
+# what would you like to call it - name the service/object
+metadata: 
+  name: nginx-deployment
+
+
+spec: 
+  selector:
+    matchLabels:
+      app: nginx # look for this label to match with k8 service
+
+  # Let's create a replica set of this with 3 instances/pods
+  replicas: 3
+
+  # Template to use it's label for K8 service to launch in the browser
+  template: 
+    metadata:
+      labels: 
+        app: nginx # This label connects to the service or any other K8 components
+    
+    #Let's define the container spec:
+    spec:
+      containers:
+      - name: nginx
+        image: {dockerhub name}/{image name}
+        ports:
+        - containerPort: 80
+
+# create a kubernetes nginx-service.yml to create a k8 service
+```
 ---
 #### What are the use cases
 - can be untilised with K8, docker-compose, Ansible, Cloud-formation,
@@ -800,11 +841,96 @@ create a file for nginx_svc.yml
 
 ![k8commands2](https://user-images.githubusercontent.com/53493950/160810448-f028912a-94d6-4d8e-ba48-046da580e3be.PNG)
 
-## K8 SCRIPT
-
-
+## K8 API YML FILE
 
 <br/>
+
+- Deployment file
+
+<br/>
+
+```yml
+
+# K8 works with API versions to declare the resources
+# We have to declase to apiVersion and the kind of service/component
+# services: deployment, service, pods, replicasets, crobjob, autoscalinggroup, horizontal pod scaling group (HPA)
+# kubectl get service_name - deployment - pod - rs
+# kubectl get deploy nginx_deploy (nginx_svc)
+# kubectl get pods
+# kubectl describe pod pod_name
+
+# YML is case sensitive - indentation of YML is important
+# use spaces not a tab
+apiVersion: apps/v1 # which api to use for deployment
+kind: Deployment # what kind of service/object you want to create
+
+# what would you like to call it - name the service/object
+metadata: 
+  name: theemployeeapi-deployment
+
+
+spec: 
+  selector:
+    matchLabels:
+      app: theemployeeapi # look for this label to match with k8 service
+
+  # Let's create a replica set of this with 3 instances/pods
+  replicas: 3
+
+  # Template to use it's label for K8 service to launch in the browser
+  template: 
+    metadata:
+      labels: 
+        app: theemployeeapi # This label connects to the service or any other K8 components
+    
+    #Let's define the container spec:
+    spec:
+      containers:
+      - name: theemployeeapi
+        image: oscareo/newemployeeapi:latest
+        ports:
+        - containerPort: 80
+
+# create a kubernetes nginx-service.yml to create a k8 service
+
+```
+<br/>
+
+<br/>
+
+```yml
+
+apiVersion: v1 # which api to use for deployment
+kind: Service # what kind of service/object you want to create
+#meta data for name
+metadata:
+  name: theemployeeapi-svc
+  namespace: default #
+
+  #Specification to include ports Selector to connect to the deploy
+spec:
+  ports:
+  - nodePort: 30445 
+    port: 90
+    protocol: TCP
+    targetPort: 80
+
+#Lets define the selector and label to connect to nginx deployment
+  selector:
+    app: theemployeeapi #this label connect this service to deployment
+    
+    # CreatingLoadBalencer
+  type: LoadBalancer
+
+```
+<br/>
+
+<br/>
+
+![cluster](https://user-images.githubusercontent.com/53493950/160889898-9327b922-9c7b-40cb-8fae-04b934c5f7d8.png)
+
+<br/>
+
 <br/>
 
 # API DOCUMENTATION

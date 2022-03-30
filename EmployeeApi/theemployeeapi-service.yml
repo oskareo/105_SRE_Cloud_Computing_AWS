@@ -1,0 +1,21 @@
+apiVersion: v1 # which api to use for deployment
+kind: Service # what kind of service/object you want to create
+#meta data for name
+metadata:
+  name: theemployeeapi-svc
+  namespace: default #
+
+  #Specification to include ports Selector to connect to the deploy
+spec:
+  ports:
+  - nodePort: 30445 
+    port: 90
+    protocol: TCP
+    targetPort: 80
+
+#Lets define the selector and label to connect to nginx deployment
+  selector:
+    app: theemployeeapi #this label connect this service to deployment
+    
+    # CreatingLoadBalencer
+  type: LoadBalancer
