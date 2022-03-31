@@ -925,13 +925,124 @@ spec:
 ```
 <br/>
 
+
+<br/>
+
 <br/>
 
 ![cluster](https://user-images.githubusercontent.com/53493950/160889898-9327b922-9c7b-40cb-8fae-04b934c5f7d8.png)
 
 <br/>
 
+
+
 <br/>
+
+<br/>
+
+# Deploy Api with K8 on EC2 instance
+
+- Set up the security group of your instance
+
+![sg](https://user-images.githubusercontent.com/53493950/161105519-1ad57908-38f2-40ef-bfd0-ba2e85adf3e0.PNG)
+
+
+- Connect to the EC2 with the ssh key instance.
+
+- Connect WinSCP from your localhost to the EC2 instance.
+
+
+![authen](https://user-images.githubusercontent.com/53493950/161110651-6e6b4c33-d966-4111-9016-6818f24ce11e.PNG)
+
+
+<br/>
+
+![lol](https://user-images.githubusercontent.com/53493950/161110558-b9f95b0b-e72b-444a-96ff-03bce5f46f00.PNG)
+
+<br/>
+
+![pic](https://user-images.githubusercontent.com/53493950/161112038-7fa1a466-97c2-42ba-9fa5-178d0c4cb447.PNG)
+
+<br/>
+
+
+
+## Installing minikube & running your Api
+- log into the ubuntu virtual machine
+- install kubectl first using the following command:
+
+```bash
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+```
+- now make kubectl executeble:
+```bash
+chmod +x ./kubectl
+```
+- now move kubectl:
+```bash
+sudo mv ./kubectl /usr/local/bin/kubectl
+```
+- now install Docker:
+```bash
+sudo apt-get install docker.io -y
+```
+- now install minikube and make the file executable and move it to the same location as kubectl
+```bash
+curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+```
+- you can check if its installed properly by running:
+```bash
+minikube version
+```
+
+
+- change to root user:
+```bash
+sudo -i
+```
+- kubernetes requires conntrack to be installed in the root path:
+```bash
+sudo apt install conntrack
+```
+- now start minikube with no driver:
+```bash
+minikube start --vm-driver=none
+```
+- now check the status to see everything is working
+```
+minikube status
+```
+
+- We already transfered the yml files to the EC2. You ca tranfer it whatever way is easier and safe. If you do  not want to use WinSCP THE EXECUTE THE FOLLOWING COMMANDS:
+- 
+```bash
+# option i makes sure you are not overwriting any existing files
+scp -i [auth file] [source] [desitination]
+# example:
+$ scp -i ~/.ssh/105.pem api_test-service.yml ubuntu@ec2-52-19-104-232.eu-west-1.compute.amazonaws.com:
+```
+- now deploy both files using kubernetes, always run deploy first!:
+```bash
+kubectl create -f [filename]
+# example:
+kubectl create -f theemployee-deployment.yml
+kubectl create -f theemployee-service.yml
+
+```
+- Run `kubectl get deploy` to get the access port for your api
+
+![kube_service](https://user-images.githubusercontent.com/53493950/161114335-1e06dd73-a4b4-475a-9e2e-0f81b65a4b95.PNG)
+
+<br/>
+<br/>
+
+- Globally deployed
+
+![j](https://user-images.githubusercontent.com/53493950/161114911-c18ee0b1-2506-4733-b8d1-22960712f34d.PNG)
+
+<br/>
+<br/>
+
 
 # API DOCUMENTATION
   
@@ -963,5 +1074,6 @@ spec:
 ## Finishing an important question
 
 - Does that answer your question? would like me to go into more detail
+
 
   
